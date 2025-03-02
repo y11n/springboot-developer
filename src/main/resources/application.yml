@@ -11,6 +11,7 @@ spring:
 
     datasource:
       url: hdbc:h2:mem:testdb
+      username: sa
 
     h2:
       console:
