@@ -53,25 +53,25 @@ public class User implements UserDetails {
     @Override
     public boolean isAccountNonExpired() {
         // 만료되었는지 확인하는 로직
-        return false; // true -> 잠금되지 않음
+        return true; // true -> 잠금되지 않음
     }
 
     @Override
     public boolean isAccountNonLocked() {
         // 계정 잠금되었는지 확인하는 로직
-        return false; // true -> 잠금되지 않음
+        return true; // true -> 잠금되지 않음
     }
 
     // 패스워드 만료 여부 반환
     @Override
     public boolean isCredentialsNonExpired() {
         // 패스워드 만료 여부 확인하는 로직
-        return false; // true -> 잠금되지 않음
+        return true; // true -> 잠금되지 않음
     }
 
     @Override
     public boolean isEnabled() {
         // 계정 사용 가능한지 확인하는 로직
-        return false; // true -> 사용 가능
+        return true; // true -> 사용 가능
     }
 }
